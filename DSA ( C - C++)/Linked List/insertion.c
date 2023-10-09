@@ -76,7 +76,7 @@ Node *InsertAfterNode(Node *head, Node *prevNode, int data)
     prevNode->next = ptr;
     return head;
 }
-Node *InsertAtaData(Node *head , int data) {
+Node *InsertAfterData(Node *head , int data) {
     int target;
     Node *p = head , *ptr =(Node *)malloc(sizeof(Node)) , *placeholder;
     ptr->data = data;
@@ -94,6 +94,9 @@ Node *InsertAtaData(Node *head , int data) {
     placeholder->next = ptr;
     return head;
 }
+Node *InsertBeforeData(Node *head , int data) {
+
+}
 int main()
 {
     struct Node *head, *second, *third, *beforeHead;
@@ -106,9 +109,9 @@ int main()
     {
         InsertAtTheEnd(head,i);
     }
-    head = InsertAtaData(head, 144);
+    head = InsertAfterData(head, 144);
     traverse(head);
-    
+
     free(head);
     return 0;
 }
