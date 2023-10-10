@@ -48,7 +48,7 @@ Node *InsertInBetween(Node *head, int data, int pos)
     p->next = ptr;
     return head;
 }
-Node *InsertAtTheEnd(Node *head, int data) 
+Node *InsertAtTheEnd(Node *head, int data) {
     Node *ptr = (Node *)malloc(sizeof(Node));
     Node *p = head;
     // just to traverse untill the p node's next reaches NULL (which means end of the linked list)
