@@ -14,7 +14,7 @@ void Travese(Node *head) {
                           ,(p->next == NULL) ? "->_NULL" : "->" );
         p= p->next;
     }
-    
+    printf("\n");
 }
 Node *AddAtBegin(Node *head ,int data){
     // create PTR
@@ -54,6 +54,7 @@ Node *AddBeforeNode (Node *head , int data) {
     }
     ptr->next = p;
     ptr->prev = p->prev;
+    ptr->prev->next = ptr;
 
     // DELET THESE lines
     printf("%x\n",p->prev);
@@ -62,6 +63,7 @@ Node *AddBeforeNode (Node *head , int data) {
 
     p->prev = ptr;
     // ptr->next = p;
+
     return(head);
 }
 int main() {
@@ -77,5 +79,14 @@ int main() {
    }
    head = AddBeforeNode(head, 11);
     Travese(head);
+    Travese(head);
+    Travese(head);
+    Node *temp;
+    while (head != NULL) {
+        temp = head;
+        head = head->next;
+        free(temp);
+    }
+
 return 0 ;
 }
