@@ -26,6 +26,32 @@ Node *AddAtBegin(Node *head ,int data){
     head = ptr;
     return head;
 }
+Node *DeleteAtNode(Node *head) {
+    Node *p = head;
+    int target;
+    Travese(head);
+    printf("\nEnter the Node to delete(Give data of the node)\n");
+    scanf("%d",&target);
+    while (p->data != target)
+    {
+        p=p->next;
+    }
+    p->prev->next = p->next;
+    p->next = p->prev;
+    free(p);
+    return head;
+}
+Node *DeleteEndNode(Node *head) {
+    Node *p = head;
+    while (p->next != NULL)
+    {
+        p = p->next;
+    }
+    p->prev->next = NULL;
+    free(p);
+    return head;
+
+}
 int main() {
     Node *head=(Node *)malloc(sizeof(Node));
     Node *sec=(Node *)malloc(sizeof(Node));
@@ -37,7 +63,7 @@ int main() {
    {
     head = AddAtBegin(head, i);
    }
-   
+   head = DeleteEndNode(head);
     Travese(head);
 return 0 ;
 }

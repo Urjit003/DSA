@@ -38,6 +38,32 @@ Node *AddAtEnd(Node *head , int data) {
     ptr->next = NULL;
     return head;
 }
+Node *AddBeforeNode (Node *head , int data) {
+    Node *p = head;
+    int target;
+    Node *ptr =(Node *) malloc(sizeof(Node));
+    ptr->data = data;
+    Travese(head);
+    printf("\nEnter the data of node for the new node to be inserted before it\n");
+    scanf("%d",&target);
+
+    while (p->data != target && p != NULL)
+    {
+        p=p->next;
+
+    }
+    ptr->next = p;
+    ptr->prev = p->prev;
+
+    // DELET THESE lines
+    printf("%x\n",p->prev);
+    printf("%x\n",p->prev->prev);
+    printf("%x\n",p);
+
+    p->prev = ptr;
+    // ptr->next = p;
+    return(head);
+}
 int main() {
     Node *head=(Node *)malloc(sizeof(Node));
     Node *sec=(Node *)malloc(sizeof(Node));
@@ -49,7 +75,7 @@ int main() {
    {
     head = AddAtEnd(head, i);
    }
-   
+   head = AddBeforeNode(head, 11);
     Travese(head);
 return 0 ;
 }
