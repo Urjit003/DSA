@@ -80,3 +80,22 @@ CREATE TABLE db1.salesman_master (
 	('S00002', 'Manish', '65', 'Nariman', 'Bombay', '400001', 'Maharashtra', 3000, 200, 100, 'Good'),
 	('S00003', 'Ravi', 'P-7', 'Bandra', 'Bombay', '400032', 'Maharashtra', 3000, 200, 100, 'Good'),
 	('S00004', 'Aashish', 'A/5', 'Juhu', 'Bombay', '400044', 'Maharashtra', 3500, 200, 150, 'Good');
+
+CREATE TABLE db1.sale_order (
+    order_no varchar(6),
+    order_date DATE,
+    Client_no varchar(6),
+    Dely_Addr varchar(25),
+    Salesman_no varchar(6),
+    Dely_type CHAR(1) Default 'F',
+    Billed_yn CHAR(1),
+    Dely_date DATE ,
+    Order_status varchar(10) ,
+    primary key (order_no) ,
+		check (order_no like 'O%'),
+	check (Dely_type='P'OR Dely_type='F'),
+    check (Dely_date >= order_date),
+    check ((Order_status = 'In Process') OR (Order_status = 'Fulfilled') OR (Order_status = 'Back Order')),
+    FOREIGN KEY (Client_no) REFERENCES db1.client_master(Client_No),
+    FOREIGN KEY (Salesman_no) REFERENCES db1.salesman_master(salesman_no)
+);
