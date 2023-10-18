@@ -40,6 +40,7 @@ void Enqueue(Queue *q, int value)
         printf("QUEUE OVERFLOW can't insert %d\n", value);
     else
     {
+        printf("queuing %d\n", value);
         q->r++;
         q->arr[q->r] = value;
     }
@@ -73,10 +74,10 @@ int main()
     // enqueuing a few elements
     Enqueue(&q, 1);
     Enqueue(&q, 2);
+    Enqueue(&q, 3);
     
     printf("Dequeuing %d\n",Dequeue(&q));
     if (IsEmpty(&q))
-
     {
         printf("Queue is Empty\n");
     }
