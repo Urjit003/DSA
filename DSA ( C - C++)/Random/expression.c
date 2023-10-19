@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main()
 {
-    int a = 3*2 - (8+1); // BH GU SH BA (/*+-) DMAS
+    int a = 3*2 - (8+1); // 
     printf("%d",a);
     return 0;
 }

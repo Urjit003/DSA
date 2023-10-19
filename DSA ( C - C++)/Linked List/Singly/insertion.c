@@ -82,7 +82,7 @@ Node *InsertAfterData(Node *head , int data) {
     traverse(head);
     printf("Enter the data of a node to search : \n");
     scanf("%d",&target);
-    while (p->data != target)   
+    while (p->data != target )   
     {
         p= p->next;
     }
@@ -102,13 +102,12 @@ int main()
 
     // allocated in HEAP
     head = (struct Node *)malloc(sizeof(struct Node));
-    head->data = 0;
+    head->data = -10;
     head->next = NULL;
-    for (int i = 1; i <= 50; i++)
+    for (int i = 0; i <= 100; i+=10)
     {
         InsertAtTheEnd(head,i);
     }
-    head = InsertAfterData(head, 144);
     traverse(head);
 
     free(head);

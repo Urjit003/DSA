@@ -16,12 +16,10 @@ int main()
         s1->id = i + 1;
         cout << "Enter name of student " << i + 1;
         cin >> s1->Name[i];
-        cout << "Enter mark of student " << i + 1;
-        cin >> s1->per[i];  
     }
     for (int i = 0; i < 5; i++)
     {
-        cout << s1->id <<s1->Name << " " << s1->per << endl;
+        cout << s1->id <<s1->Name << endl;
     }
     
     return 0;
