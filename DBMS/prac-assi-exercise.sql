@@ -99,6 +99,8 @@ CREATE TABLE db1.sale_order (
     FOREIGN KEY (Client_no) REFERENCES db1.client_master(Client_No),
     FOREIGN KEY (Salesman_no) REFERENCES db1.salesman_master(salesman_no)
 );
+	delete from db1.sale_order;
+	drop table db1.sale_order;
 	INSERT INTO db1.sale_order (order_no, order_date, Client_no, Dely_type, Billed_yn, Salesman_no, Dely_date, Order_status)
 	VALUES
 	('O19001', '12-Jan-96', 'C00001', 'F', 'N', 'S00001', '20-Jan-96', 'In Process'),
@@ -108,7 +110,7 @@ CREATE TABLE db1.sale_order (
 	('O46866', '20-May-96', 'C00004', 'P', 'N', 'S00002', '22-May-96', 'Cancelled'),
 	('O19008', '24-May-96', 'C00005', 'F', 'N', 'S00004', '26-May-96', 'In Process');
 
-
+	SELECT * FROM db1.sale_order;
 
 CREATE TABLE db1.sale_order_details(
 	order_no varchar(6),
