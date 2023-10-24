@@ -89,7 +89,7 @@ CREATE TABLE db1.sale_order (
     Salesman_no varchar(6),
     Dely_type CHAR(1) Default 'F',
     Billed_yn CHAR(1),
-    Dely_date DATE ,
+    Dely_date DATE NOT NULL,
     Order_status varchar(10) ,
     primary key (order_no) ,
 		check (order_no like 'O%'),
