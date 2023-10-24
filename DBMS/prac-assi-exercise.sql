@@ -99,3 +99,24 @@ CREATE TABLE db1.sale_order (
     FOREIGN KEY (Client_no) REFERENCES db1.client_master(Client_No),
     FOREIGN KEY (Salesman_no) REFERENCES db1.salesman_master(salesman_no)
 );
+	INSERT INTO db1.sale_order (order_no, order_date, Client_no, Dely_type, Billed_yn, Salesman_no, Dely_date, Order_status)
+	VALUES
+	('O19001', '12-Jan-96', 'C00001', 'F', 'N', 'S00001', '20-Jan-96', 'In Process'),
+	('O19002', '25-Jan-96', 'C00002', 'P', 'N', 'S00002', '27-Jan-96', 'Cancelled'),
+	('O46865', '18-Feb-96', 'C00003', 'F', 'Y', 'S00003', '20-Feb-96', 'Fulfilled'),
+	('O19003', '03-Apr-96', 'C00001', 'F', 'Y', 'S00001', '07-Apr-96', 'Fulfilled'),
+	('O46866', '20-May-96', 'C00004', 'P', 'N', 'S00002', '22-May-96', 'Cancelled'),
+	('O19008', '24-May-96', 'C00005', 'F', 'N', 'S00004', '26-May-96', 'In Process');
+
+
+
+CREATE TABLE db1.sale_order_details(
+	order_no varchar(6),
+    Product_no varchar(6),
+    Qty_ordered Numeric(8),
+    Qty_disp Numeric(8),
+	Product_rate Numeric(10,2),
+    PRIMARY KEY (order_no , Product_no),
+    FOREIGN KEY (order_no) REFERENCES db1.sale_order(order_no),
+     FOREIGN KEY (Product_no) REFERENCES db1.product_master(Product_no)
+);
