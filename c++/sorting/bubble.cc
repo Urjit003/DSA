@@ -14,18 +14,32 @@ template <typename T> void Swap (T *a, T *b) {
     *b = temp;
 }
 template <typename T> void Bubble(T *arr,int size) {
-    bool swapped = 0;
     for (int i = 0; i < size; i++)
     {
-        swapped = false;
+        cout<< "Doing " <<i <<" iteration ." <<endl;
         for (int j = 0; j < size - 1 -i ; j++)
         {
             if(arr[j]>arr[j +1 ]){ 
                 Swap(&arr[j],&arr[j+1]);
-                swapped = true;
             }
         }
-        if (!swapped) {
+    }
+    
+}
+template <typename T> void BubbleOPT(T *arr,int size) {
+    bool IsSorted = 0;
+    for (int i = 0; i < size; i++)
+    {
+        cout<< "Doing " <<i <<" iteration" <<endl;
+        IsSorted = true;
+        for (int j = 0; j < size - 1 -i ; j++)
+        {
+            if(arr[j]>arr[j +1 ]){ 
+                Swap(&arr[j],&arr[j+1]);
+                IsSorted = false;
+            }
+        }
+        if (IsSorted) {
             break;
         }
     }
@@ -33,10 +47,10 @@ template <typename T> void Bubble(T *arr,int size) {
 }
 
 int main (){
-    float arr[]= {1.01,2.02,.42,1.33,2.1232};
+    int arr[]= {4,5,6};
     int size = sizeof(arr)/sizeof(arr[0]);
     PrintArray(arr,size);
-    Bubble(arr, size);
+    BubbleOPT(arr, size);
     PrintArray(arr,size);
 return 0;
 }
