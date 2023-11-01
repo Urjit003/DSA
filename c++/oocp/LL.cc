@@ -52,9 +52,6 @@ public:
         head = head->AddToEnd(head , m);
     }
         head = head->DeleteATBegin(head); //10
-        head = head->DeleteATBegin(head);// 20
-        head = head->DeleteATBegin(head);// 30
-        head = head->DeleteATBegin(head);// 40
     head->Traverse(head);
     return 0;
 }

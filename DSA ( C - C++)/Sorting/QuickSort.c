@@ -17,14 +17,11 @@ int *MakeArry(int size)
     }
     return arr;
 }
-void PrintArray(int *arr, int size)
+void PrintArray(int *arr, int n)
 {
-    printf("\n");
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < n; i++)
     {
-        printf("%02d is the %d%s element\n", arr[i], i + 1, (i + 1 == 1) ? "st" : (i + 1 == 2) ? "nd"
-                                                                              : (i + 1 == 3)   ? "rd"
-                                                                                               : "th");
+        printf("[%d]", arr[i]);
     }
     printf("\n");
 }
@@ -86,9 +83,8 @@ int main()
     int size = sizeof(arr) / sizeof(arr[0]);
     int ParIndex = Partiton_diff(arr, 0 , size-1);
     PrintArray(arr, size);
-    printf("%d", Partiton_diff(arr, 0, size - 1));
+    QuickSort(arr,0, size -1 );
     PrintArray(arr, size);
-
     // free(arr);
     return 0;
 }

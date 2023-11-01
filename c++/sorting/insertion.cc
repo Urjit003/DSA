@@ -36,7 +36,6 @@ template <typename T>
 void InsertionSortOPT(T *arr,int size) {
     
     int key;
-
     for (T i = 0; i < size; i++)
     {
           printf("Doing %d%s iteration\n", i + 1, (i + 1 == 1) ? "st" : (i + 1 == 2) ? "nd"
