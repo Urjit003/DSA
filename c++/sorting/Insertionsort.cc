@@ -32,5 +32,6 @@ int main (){
     PrintArray<>(arr,size);
     double * Sarr = InsertionSort<double>(arr, size);
     PrintArray<>(Sarr,size);
+    
 return 0;
 }

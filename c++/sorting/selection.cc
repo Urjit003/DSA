@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stdlib.h>
+#include <algorithm>
 using namespace std;
 template <typename T> void PrintArray (T *arr,int size)  {
     for (auto i = 0; i < size; i++)
@@ -8,9 +9,25 @@ template <typename T> void PrintArray (T *arr,int size)  {
     }
     cout <<endl;
 }
-
+template <typename T> void swap (T *a, T *b) {
+    T temp = *a ;
+    *a = *b ;
+    *b = temp;
+}
 template <typename T>
 T *SelectionSort(T *arr, int size) {
+    int IndexOfMin ;
+    for (int i = 0; i < size-1; i++)
+    {
+        IndexOfMin = i;
+        for (int j = i + 1; j < size; j++)
+        {
+            if(arr[j] < arr[IndexOfMin]) {
+                IndexOfMin = j ;
+            }
+        }
+        swap(&arr[i],&arr[IndexOfMin]);
+    }
     
     return arr;
 }

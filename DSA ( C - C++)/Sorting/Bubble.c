@@ -33,15 +33,21 @@ int *makearry(int size)
 }
 int sortarray(int arr[], int size)
 {
+    int IsSorted = 0;
     // ascending order
     for (int i = 0; i < size; i++)
     {
+        IsSorted = 1;
         for (int j = i + 1; j < size; j++)
         {
             if (arr[i] > arr[j])
             {
                 swap(&arr[i], &arr[j]);
+                IsSorted = 0;
             }
+        }
+        if(IsSorted) {
+            break;
         }
     }
     return 1;
