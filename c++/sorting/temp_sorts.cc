@@ -74,10 +74,9 @@ template <typename T> void InsertionSort(T *arr, int size) {
     }
     
 }
-
 int main (){
     const int size = 10;
-    int *arr = new int[size];
+    float *arr = new float[size];
     for (int i = 0; i < size; i++)
     {
         arr[i]= rand() % 100;
