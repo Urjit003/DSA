@@ -16,15 +16,15 @@ create table db1.Client_master (
 	drop table db1.Client_master;
 	truncate table db1.Client_master;
     select * from db1.Client_master;
-    
-INSERT INTO db1.Client_master (Client_No, Name, City, PinCode, State, Bal_due)
-VALUES
-('C00001', 'Ivan Bayross', 'Bombay', 400054, 'Maharashtra', 15000),
-('C00002', 'Vandana Saitwal', 'Madras', 780001, 'Tamil Nadu', 0),
-('C00003', 'Pramada Jaguste', 'Bombay', 400057, 'Maharashtra', 5000),
-('C00004', 'Basu Navindgi', 'Bombay', 400056, 'Maharashtra', 0),
-('C00005', 'Ravi Sreedharan', 'Delhi', 100001, 'Delhi', 2000),
-('C00006', 'Rukmini', 'Bombay', 400050, 'Maharashtra', 0);
+		
+	INSERT INTO db1.Client_master (Client_No, Name, City, PinCode, State, Bal_due)
+	VALUES
+	('C00001', 'Ivan Bayross', 'Bombay', 400054, 'Maharashtra', 15000),
+	('C00002', 'Vandana Saitwal', 'Madras', 780001, 'Tamil Nadu', 0),
+	('C00003', 'Pramada Jaguste', 'Bombay', 400057, 'Maharashtra', 5000),
+	('C00004', 'Basu Navindgi', 'Bombay', 400056, 'Maharashtra', 0),
+	('C00005', 'Ravi Sreedharan', 'Delhi', 100001, 'Delhi', 2000),
+	('C00006', 'Rukmini', 'Bombay', 400050, 'Maharashtra', 0);
 
 
 create table db1.product_master (
@@ -83,35 +83,35 @@ CREATE TABLE db1.salesman_master (
 
 CREATE TABLE db1.sale_order (
     order_no varchar(6),
-    order_date DATE,
+    order_date DATE ,
     Client_no varchar(6),
     Dely_Addr varchar(25),
     Salesman_no varchar(6),
     Dely_type CHAR(1) Default 'F',
     Billed_yn CHAR(1),
-    Dely_date DATE NOT NULL,
+    Dely_date DATE ,
     Order_status varchar(10) ,
     primary key (order_no) ,
 		check (order_no like 'O%'),
 	check (Dely_type='P'OR Dely_type='F'),
     check (Dely_date >= order_date),
-    check ((Order_status = 'In Process') OR (Order_status = 'Fulfilled') OR (Order_status = 'Back Order')),
+    check ((Order_status = 'In Process') OR (Order_status = 'Fulfilled') OR (Order_status = 'Back Order')OR (Order_status = 'Cancelled')),
     FOREIGN KEY (Client_no) REFERENCES db1.client_master(Client_No),
-    FOREIGN KEY (Salesman_no) REFERENCES db1.salesman_master(salesman_no)
-);
-	delete from db1.sale_order;
-	drop table db1.sale_order;
+    FOREIGN KEY (Salesman_no) REFERENCES db1.salesman_master(salesman_no) 
+    );
+    
 	INSERT INTO db1.sale_order (order_no, order_date, Client_no, Dely_type, Billed_yn, Salesman_no, Dely_date, Order_status)
-	VALUES
-	('O19001', '12-Jan-96', 'C00001', 'F', 'N', 'S00001', '20-Jan-96', 'In Process'),
-	('O19002', '25-Jan-96', 'C00002', 'P', 'N', 'S00002', '27-Jan-96', 'Cancelled'),
-	('O46865', '18-Feb-96', 'C00003', 'F', 'Y', 'S00003', '20-Feb-96', 'Fulfilled'),
-	('O19003', '03-Apr-96', 'C00001', 'F', 'Y', 'S00001', '07-Apr-96', 'Fulfilled'),
-	('O46866', '20-May-96', 'C00004', 'P', 'N', 'S00002', '22-May-96', 'Cancelled'),
-	('O19008', '24-May-96', 'C00005', 'F', 'N', 'S00004', '26-May-96', 'In Process');
+VALUES 
+('O19001', '1996-01-12', 'C00001', 'F', 'N', 'S00001', '1996-01-20', 'In Process'),
+('O19002', '1996-01-25', 'C00002', 'P', 'N', 'S00002', '1996-01-27', 'Cancelled'),
+('O46865', '1996-02-18', 'C00003', 'F', 'Y', 'S00003', '1996-02-20', 'Fulfilled'),
+('O19003', '1996-04-03', 'C00001', 'F', 'Y', 'S00001', '1996-04-07', 'Fulfilled'),
+('O46866', '1996-05-20', 'C00004', 'P', 'N', 'S00002', '1996-05-22', 'Cancelled'),
+('O19008', '1996-05-24', 'C00005', 'F', 'N', 'S00004', '1996-05-26', 'In Process');
+
 
 	SELECT * FROM db1.sale_order;
-
+delete FROM db1.sale_order_details;
 CREATE TABLE db1.sale_order_details(
 	order_no varchar(6),
     Product_no varchar(6),
@@ -122,3 +122,20 @@ CREATE TABLE db1.sale_order_details(
     FOREIGN KEY (order_no) REFERENCES db1.sale_order(order_no),
      FOREIGN KEY (Product_no) REFERENCES db1.product_master(Product_no)
 );
+select * from db1.client_master ;
+ select * from db1.product_master ;
+ select * from db1.sale_order;
+ select * from db1.salesman_master;
+select * from db1.sale_order_details;
+	INSERT INTO db1.sale_order_details
+			VALUES 
+				('O19001', 'P00001', 4, 4, 525),
+				('O19002', 'P00001', 10, 0, 525),
+				('O46865', 'P07868', 3, 3, 3150),
+				('O46865', 'P00001', 10, 10, 525),
+				('O19003', 'P03453', 2, 2, 1050),
+				('O46866', 'P07965', 1, 1, 8400),
+				('O19008', 'P00001', 10, 5, 525);
+	
+
+
