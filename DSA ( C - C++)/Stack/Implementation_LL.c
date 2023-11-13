@@ -73,7 +73,7 @@ int peek(struct Node *top, int pos)
     {
         ptr = ptr->next;
     }
-    if (!(ptr != NULL))
+    if ((ptr == NULL))
     {
         return -1; // failure
     }

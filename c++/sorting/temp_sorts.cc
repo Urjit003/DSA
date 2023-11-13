@@ -1,5 +1,6 @@
 #include<iostream>
 #include<stdlib.h>
+#include <chrono>
 // #include <cstdlib>
 // #include <ctime>
 using namespace std;
@@ -22,6 +23,7 @@ template <typename T> void SWAP(T *a , T *b) {
     
 }
 template <typename T> void BubbleSort(T *arr, int size) {
+    auto start = std::chrono::high_resolution_clock::now();
     int IsSorted = false;
     for (int i = 0; i < size; i++)
     {
@@ -37,7 +39,19 @@ template <typename T> void BubbleSort(T *arr, int size) {
             break;
         }
     }
-    
+  
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
+    cout << "Bubble sort took " << duration << " milliseconds" << endl;
+}
+template <typename T> bool IsSorted(T *arr, int size) {
+    for (int i = 0; i < size; i++)
+    {
+        if(arr[i] > arr[i+1]) {
+            return 0;
+        }
+    }
+    return true;
 }
 template <typename T> void SelectionSort(T *arr, int size) {
     int IndexOfMin;
@@ -45,7 +59,7 @@ template <typename T> void SelectionSort(T *arr, int size) {
     {
         IndexOfMin = i;
         for (int j = i +1 ; j < size ; j++)
-        {
+        { 
             if (arr[j] < arr[IndexOfMin])
             {
                 IndexOfMin = j ;
@@ -75,15 +89,16 @@ template <typename T> void InsertionSort(T *arr, int size) {
     
 }
 int main (){
-    const int size = 10;
+    const int size = 100;
     float *arr = new float[size];
     for (int i = 0; i < size; i++)
     {
-        arr[i]= rand() % 100;
+        arr[i]= rand() % 1000;
     }
-    
+    cout <<  IsSorted(arr,size)<<endl;
     PrintArray<>(arr,size);
-    InsertionSort<>(arr, size);
-    PrintArray<>(arr,size);
+    InsertionSort<>(arr,size);
+    cout <<  IsSorted(arr,size)<<endl;
+    PrintArray<>(arr,size); 
 return 0;
 }
