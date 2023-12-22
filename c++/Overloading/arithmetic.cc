@@ -21,9 +21,10 @@ class abc {
 };
 int main (){
     abc a1(10);
-    abc a2(10);
+    abc a2(20);
     abc a3 (10);
-    abc res = (a1+ a2 + a3) - 30 + a1;
+    abc res =a2 - a1-10;
     res.display();
+
 return 0;
 }

@@ -94,6 +94,20 @@ Node *InsertAfterData(Node *head , int data) {
     return head;
 }
 Node *InsertBeforeData(Node *head , int data) {
+    int target;
+    Node *p = head , *ptr =(Node *)malloc(sizeof(Node)) , *placeholder;
+    ptr->data = data;
+    traverse(head);
+    printf("Enter the data of a node to search : \n");
+    scanf("%d",&target);
+    while (p->data != target )   
+    {
+        placeholder = p ;
+        p= p->next;
+    }
+    placeholder->next = ptr;
+    ptr->next =   p;
+    return head;
 
 }
 int main()
@@ -102,14 +116,16 @@ int main()
 
     // allocated in HEAP
     head = (struct Node *)malloc(sizeof(struct Node));
-    head->data = -10;
+    head->data = 0;
     head->next = NULL;
-    for (int i = 0; i <= 100; i+=10)
+    for (int i = 1; i <= 10; i++)
     {
-        InsertAtTheEnd(head,i);
+        if(i == 3) continue;
+        head= InsertAtTheEnd(head,i);
     }
-    traverse(head);
+    head = InsertBeforeData(head, 3);
 
+    traverse(head);
     free(head);
     return 0;
 }

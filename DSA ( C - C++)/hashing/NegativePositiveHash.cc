@@ -23,23 +23,42 @@ bool Search(int x ){
         
     }
 }
+void print() {
+    for (int i = 0; i < MAX+1; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            cout << " " << HashTable[i][j];
+        }
+        cout << "<-- " << i;cout << endl;
+    }
+    cout << endl;
+}
 void insert(int arr[],int size) {
     for (int i = 0; i < size; i++)
     {
         if(arr[i] > 0) {
-            HashTable[arr[i]][0] = 1 ;
+            HashTable[arr[i]][0] = 1 ; // HT[120][0] = true;
         } else {
             HashTable[abs(arr[i])][1] = 1;
         }
     }
 }
 int main (){
-    int arr[] = {120,-120 ,150 , -150};
-    
+    int *arr;
     int size = sizeof(arr)/sizeof(arr[0]);
+    for (int i = 0; i < MAX + 1 ; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            arr[j] = j;
+        }
+        arr[i] = i;
+    }
     insert(arr,size);
-    int x = -150 ;
+    int x =-12;
     int Find = Search(x);
+    print();
         if(Find) {
             cout << x << " is present";
         }else {

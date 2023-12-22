@@ -3,17 +3,29 @@
 //     India       -> delhi
 //     Switzerland -> Bern
 //     USA         -> Washington DC
+//      ASCII 
 #include <iostream>
 #include <stdlib.h>
-#define MAX 1000
+#define MAX 50
 using namespace std;
-typedef struct
+typedef struct Node
 {
     string CountryIndex;
     string CapitalName;
     int counter;
 } Node;
 Node *HashTable[MAX + 1][2];
+void print() {
+    for (int i = 0; i < MAX + 1; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            cout << HashTable[i][j]<< endl;
+        }
+        cout << endl;
+    }
+    
+}
 void insert(string CountryName, string CapitalName)
 {
     Node *newNode = new Node;
@@ -41,12 +53,11 @@ int main()
     // insert(arr,"India", "delhi")
     // find("delhi")
     // find == 1 , true -> it is present
-    insert("India", "delhi");
-    insert("Switzerland", "Bern");
-    insert("Pakistan", "Islamabad");
+    insert("India","delhi");
+    insert("Pakistan","Islamabad");
 
-    string res = find("Angola");
-
+    string res = find("Pakistan");
+    print();
     cout << res;
     return 0;
 }

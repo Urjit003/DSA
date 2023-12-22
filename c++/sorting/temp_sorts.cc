@@ -97,7 +97,7 @@ int main (){
     }
     cout <<  IsSorted(arr,size)<<endl;
     PrintArray<>(arr,size);
-    InsertionSort<>(arr,size);
+    BubbleSort<>(arr,size);
     cout <<  IsSorted(arr,size)<<endl;
     PrintArray<>(arr,size); 
 return 0;
