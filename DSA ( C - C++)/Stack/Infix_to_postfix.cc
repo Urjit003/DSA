@@ -46,7 +46,9 @@ string InfixToPostfix(string exp)
         else
         {
             // if the scanned char is operator
-            while (!st.empty() && precedence(exp[i]) <= precedence(st.top()))
+            // + (1) , / (2)
+            // + > (
+            while (!st.empty() && precedence(c) <= precedence(st.top()))
             {
                 postfix += c;
                 st.pop();

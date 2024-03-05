@@ -8,7 +8,7 @@ int main()
     int *arr = MakeArray(size);
     DisplayArray(arr,size);
     return 0;
-}
+}   
 int *MakeArray(int size)
 {
     int *arr = (int *)malloc(size * sizeof(int));

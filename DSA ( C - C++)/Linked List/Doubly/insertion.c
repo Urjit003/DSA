@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct Node {
-    Node *prev;
+    struct  Node *prev;
     int data;
-    Node *next;
+    struct  Node *next;
 }Node;
 void Travese(Node *head) {
     // Traversal of doubly LL 
@@ -57,9 +57,9 @@ Node *AddBeforeNode (Node *head , int data) {
     ptr->prev->next = ptr;
 
     // DELET THESE lines
-    printf("%x\n",p->prev);
-    printf("%x\n",p->prev->prev);
-    printf("%x\n",p);
+    // printf("%x\n",p->prev);
+    // printf("%x\n",p->prev->prev);
+    // printf("%x\n",p);
 
     p->prev = ptr;
     // ptr->next = p;

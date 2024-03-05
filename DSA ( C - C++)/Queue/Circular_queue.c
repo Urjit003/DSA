@@ -31,9 +31,7 @@ int Enqueue(CircularQueue *q, int val)
     {
         q->r = (q->r + 1) % q->size;
         q->arr[q->r] = val;
-        // IMPORTANT
-        // arr[10] =10  <Y>
-        // 14 = arr[10]  <!N>
+
     }
     return val;
 }
@@ -48,7 +46,7 @@ int Dequeue(CircularQueue *q)
     {
         q->f = (q->f + 1) % q->size; // circular increment
         a = q->arr[q->f];
-    }
+    }                                                     
     return a;
 }
 void Traverse(CircularQueue *q)

@@ -9,7 +9,7 @@ void DisplayArray(int arr[], int size)
         cout << arr[i] << endl;
     }
 }
-void DisplayThreeLargest(int arr[], int size)
+int* DisplayThreeLargest(int arr[], int size)
 {
     // 1) Initialize the largest three elements as minus infinite.
     // first = second = third = -∞
@@ -34,13 +34,14 @@ void DisplayThreeLargest(int arr[], int size)
     //     }
 
     // 3) Print first, second and third.
+    int *returnarr = new int[3];
     if (size < 3)
     {
         cout <<"Size too low";
         exit(1);
     }
     int first, second, third;
-    first = second = third =0;
+    first = second = third = INT_MIN;
 
     for (int i = 0; i < size; i++)
     {
@@ -61,9 +62,15 @@ void DisplayThreeLargest(int arr[], int size)
             third = x;
         }
     }
-    cout << "the first most element is : "<< first << endl;
-    cout << "the second most element is : "<< second << endl;
-    cout << "the third most element is : "<< third << endl;
+    // cout << "the first most element is : "<< first << endl;
+    // cout << "the second most element is : "<< second << endl;
+    // cout << "the third most element is : "<< third << endl;
+
+    returnarr[0]= first;
+    returnarr[1]= second;
+    returnarr[2]= third;
+
+    return returnarr;
 }
 void setArrayElements(int arr[], int size)
 {
@@ -79,10 +86,14 @@ int main()
     int size;
     cout << "Enter the size of your array\n";
     cin >> size;
-    int arr[size];
+    int *arr = new int[size];
     setArrayElements(arr, size);
     DisplayArray(arr, size);
     cout << endl;
-    DisplayThreeLargest(arr, size);
+    int *newarr = DisplayThreeLargest(arr, size);
+    DisplayArray(newarr,3);
+
+    delete[] arr ;
+    delete[] newarr;
     return 0;
 }

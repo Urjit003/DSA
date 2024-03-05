@@ -34,7 +34,6 @@ int GetUserDecision()
     }
     return decision;
 }
-
 int GetUserChoice()
 {
     int choice, validinput = 0;
@@ -57,53 +56,58 @@ int GetUserChoice()
 void Write_content_In_file(fstream &fs)
 {
     string inputline;
-    fs.open("temp_write_content.txt",ios::out);
+    fs.open("temp_write_content.txt", ios::out);
     cout << "Begine filling up the file\n press cltr+z and enter to exit\n";
     while (cin >> inputline)
     {
         fs << inputline << endl;
     }
-    
+
     fs.close();
     fs.clear();
 }
 void Read_content_In_file(fstream &fs)
 {
-    if(fs.is_open() ) {
+    if (fs.is_open())
+    {
         fs.close();
     }
     string filename;
-    cout <<"enter file name \n";
-    cin >>  filename;
-    fs.open(filename,ios::in);
+    cout << "enter file name \n";
+    cin >> filename;
+    fs.open(filename, ios::in);
     string line;
-    cout << " \" " ;
-    while(getline(fs,line)) {
+    cout << " \" ";
+    while (getline(fs, line))
+    {
         cout << line << " ";
     }
-    cout << " \" " ;
+    cout << " \" ";
     fs.clear();
     fs.close();
 }
 void count_words_In_file(fstream &fs)
 {
-    fs.open("temp_write_content.txt",ios::in) ;
-    string word ; int count = 0;
-    while(fs >> word) {
-        count ++;
+    fs.open("temp_write_content.txt", ios::in);
+    string word;
+    int count = 0;
+    while (fs >> word)
+    {
+        count++;
     }
-    cout <<"total no of words in the temp_write_content.txt are :" << count;
+    cout << "total no of words in the temp_write_content.txt are :" << count;
 }
 void copy_content_of_file(fstream &fs)
 {
-    fs.open("temp_write_content.txt",ios::in) ;
+    fs.open("temp_write_content.txt", ios::in);
     ofstream output("copied_content.txt");
 
-    string line ;
-    while (getline(fs,line)) {
+    string line;
+    while (getline(fs, line))
+    {
         output << line << " ";
     }
-    
+
     cout << "Content successfully copied to 'copied_content.txt'" << endl;
 
     fs.close();

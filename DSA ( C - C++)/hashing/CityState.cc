@@ -50,6 +50,8 @@ string find(string CountryName)
 }
 int main()
 {
+    int arr[10] ;
+    arr[0] = 10;
     // insert(arr,"India", "delhi")
     // find("delhi")
     // find == 1 , true -> it is present

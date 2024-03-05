@@ -12,12 +12,12 @@ public:
         {
             cout << "Enter day/month/year: ";
             cin >> day >> month >> year;
-        } while (!isValidDate(day , month , year));
+        } while (!isValidDate(day, month, year));
     }
 
     Date(int d, int m, int y)
     {
-        if (isValidDate(d,m,y))
+        if (isValidDate(d, m, y))
         {
             day = d;
             month = m;
@@ -26,16 +26,19 @@ public:
         else
         {
             cout << "INVALID date entered , setting today's date \n";
-            day = 18 , month = 10 , year = 2023;
+            day = 18, month = 10, year = 2023;
             // You might want to handle this case, such as setting default values or asking the user for valid input.
         }
     }
-    bool isValidDate(int d, int m, int y) const {
-        if (m >= 1 && m <= 12) {
+    bool isValidDate(int d, int m, int y) const
+    {
+        if (m >= 1 && m <= 12)
+        {
             if ((d >= 1 && d <= 31 && (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12)) ||
                 (d >= 1 && d <= 30 && (m == 4 || m == 6 || m == 9 || m == 11)) ||
                 (d >= 1 && d <= 29 && m == 2 && ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)) ||
-                (d >= 1 && d <= 28 && m == 2 && !((y % 4 == 0 && y % 100 != 0) || y % 400 == 0))) {
+                (d >= 1 && d <= 28 && m == 2 && !((y % 4 == 0 && y % 100 != 0) || y % 400 == 0)))
+            {
                 return true;
             }
         }
@@ -43,7 +46,10 @@ public:
     }
     void Display()
     {
-        cout << day << "/" << month << "/" << year << endl;
+        cout << day << " " ;
+        cout << (month == 1 ? "jan" :(month == 2) ?  "feb":(month == 3) ? "march": (month == 3) ? "march" :(month == 4) ? "april": (month == 5) ? "may" : (month == 6) ? "june" : (month == 6) ? "july" :  (month == 8) ? "august" :
+         (month == 9) ? "sept" :  (month == 10) ? "october" : (month == 11) ? "november" : "dec") << " " << year <<endl;
+        // cout << day << "/" << month << "/" << year << endl;
     }
     void add()
     {
@@ -55,6 +61,7 @@ public:
         while (day > GetDaysinMonth())
         {
             // 8 = 20 - 28
+            //35 - 29
             day = day - GetDaysinMonth();
             month++;
             if (month > 12)
