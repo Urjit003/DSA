@@ -1,0 +1,371 @@
+operator,inout_travelling,network_type,rating,calldrop_category,latitude,longitude,state_name
+RJio,Indoor,4G,3,Satisfactory,30.1047995,78.287649,Uttarakhand
+Airtel,Indoor,2G,1,Poor Voice Quality,13.027665,77.60617333,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95661223,77.48967524,Karnataka
+RJio,Travelling,4G,5,Satisfactory,12.95661223,77.48967524,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95661223,77.48967524,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.9566106,77.489644,Karnataka
+RJio,Travelling,4G,5,Satisfactory,12.95661223,77.48967524,Karnataka
+RJio,Travelling,4G,5,Satisfactory,12.95661223,77.48967524,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95659272,77.48952109,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95661223,77.48967524,Karnataka
+RJio,Outdoor,4G,5,Satisfactory,12.95657856,77.48979293,Karnataka
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2205628,72.8429211,Maharashtra
+RJio,Indoor,Unknown,2,Call Dropped,19.2205068,72.8427726,Maharashtra
+RJio,Indoor,4G,3,Satisfactory,30.1144155,78.284009,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.1144155,78.284009,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.1153907,78.2819204,Uttarakhand
+RJio,Indoor,Unknown,1,Poor Voice Quality,19.2205235,72.8427798,Maharashtra
+RJio,Indoor,Unknown,3,Satisfactory,30.1154897,78.2819398,Uttarakhand
+RJio,Indoor,4G,4,Satisfactory,18.45501746,73.95941252,Maharashtra
+RJio,Indoor,4G,4,Satisfactory,18.45502258,73.95939886,Maharashtra
+RJio,Indoor,4G,1,Poor Voice Quality,18.4520384,73.9633979,Maharashtra
+RJio,Indoor,4G,1,Poor Voice Quality,18.4520384,73.9633979,Maharashtra
+RJio,Travelling,4G,3,Satisfactory,18.45501973,73.9594185,Maharashtra
+RJio,Indoor,4G,3,Satisfactory,30.1155765,78.2818053,Uttarakhand
+RJio,Indoor,Unknown,3,Satisfactory,30.104801,78.2876532,Uttarakhand
+RJio,Indoor,4G,5,Satisfactory,13.0527639,77.55495902,Karnataka
+RJio,Indoor,Unknown,1,Poor Voice Quality,18.95561613,72.81265171,Maharashtra
+RJio,Indoor,Unknown,2,Call Dropped,18.95561613,72.81265171,Maharashtra
+RJio,Indoor,4G,3,Satisfactory,30.10490206,78.28763942,Uttarakhand
+RJio,Indoor,4G,4,Satisfactory,-1,-1,NA
+RJio,Outdoor,4G,3,Satisfactory,30.10490206,78.28763942,Uttarakhand
+RJio,Outdoor,Unknown,2,Poor Voice Quality,18.95561613,72.81265171,Maharashtra
+Airtel,Indoor,2G,3,Poor Voice Quality,-1,-1,NA
+RJio,Travelling,Unknown,2,Poor Voice Quality,19.2323492,72.8565326,Maharashtra
+RJio,Indoor,4G,3,Satisfactory,30.11588291,78.28128832,Uttarakhand
+RJio,Indoor,Unknown,3,Satisfactory,30.11588291,78.28128832,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.1048291,78.2876164,Uttarakhand
+Airtel,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2205732,72.8428674,Maharashtra
+RJio,Indoor,4G,5,Satisfactory,12.94880057,77.49357059,Karnataka
+RJio,Indoor,4G,3,Satisfactory,30.10455074,78.287407,Uttarakhand
+RJio,Indoor,Unknown,3,Satisfactory,30.10455074,78.287407,Uttarakhand
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2205289,72.8427706,Maharashtra
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2201113,72.845086,Maharashtra
+RJio,Outdoor,4G,1,Poor Voice Quality,30.11553191,78.28176671,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.1048275,78.28761187,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.104828,78.2876196,Uttarakhand
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,5,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,5,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,5,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,5,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Indoor,Unknown,1,Poor Voice Quality,19.2216599,72.8425011,Maharashtra
+RJio,Indoor,Unknown,1,Poor Voice Quality,19.2216599,72.8425011,Maharashtra
+RJio,Indoor,Unknown,1,Poor Voice Quality,19.2216599,72.8425011,Maharashtra
+RJio,Travelling,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,3,Satisfactory,30.10468113,78.28761637,Uttarakhand
+RJio,Indoor,Unknown,3,Satisfactory,30.10468113,78.28761637,Uttarakhand
+RJio,Outdoor,4G,4,Satisfactory,-1,-1,NA
+RJio,Outdoor,4G,3,Satisfactory,-1,-1,NA
+RJio,Indoor,4G,3,Satisfactory,30.10723993,78.29441628,Uttarakhand
+RJio,Outdoor,Unknown,3,Satisfactory,19.228719,72.8556106,Maharashtra
+RJio,Outdoor,4G,3,Satisfactory,30.10723993,78.29441628,Uttarakhand
+RJio,Outdoor,4G,1,Poor Voice Quality,30.10723993,78.29441628,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.10723993,78.29441628,Uttarakhand
+RJio,Indoor,Unknown,3,Satisfactory,30.10723993,78.29441628,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.1048054,78.2875939,Uttarakhand
+RJio,Indoor,4G,5,Satisfactory,12.95662552,77.48965591,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95656531,77.4897796,Karnataka
+RJio,Outdoor,4G,5,Satisfactory,12.95659646,77.48970815,Karnataka
+Airtel,Indoor,Unknown,1,Poor Voice Quality,-1,-1,NA
+RJio,Outdoor,4G,4,Satisfactory,-1,-1,NA
+RJio,Indoor,4G,3,Satisfactory,30.1155258,78.2817675,Uttarakhand
+RJio,Travelling,Unknown,1,Poor Voice Quality,19.2205094,72.842937,Maharashtra
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73244,85.80929833,Bihar
+RJio,Indoor,4G,2,Call Dropped,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,1,Poor Voice Quality,25.73244,85.80929833,Bihar
+RJio,Travelling,4G,3,Satisfactory,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,3,Poor Voice Quality,25.73244,85.80929833,Bihar
+RJio,Travelling,4G,3,Satisfactory,25.73244,85.80929833,Bihar
+RJio,Travelling,4G,3,Satisfactory,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,2,Call Dropped,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,3,Call Dropped,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73244,85.80929833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73244,85.80929833,Bihar
+Airtel,Travelling,4G,5,Satisfactory,18.006945,81.71038667,Chhattisgarh
+RJio,Indoor,Unknown,1,Poor Voice Quality,19.2205094,72.842937,Maharashtra
+RJio,Outdoor,Unknown,3,Satisfactory,30.1048009,78.287613,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.1048001,78.2876501,Uttarakhand
+VI,Indoor,Unknown,1,Poor Voice Quality,21.12575007,79.06721741,Maharashtra
+VI,Outdoor,4G,1,Poor Voice Quality,21.1232321,79.0678923,Maharashtra
+Airtel,Indoor,2G,1,Call Dropped,-1,-1,NA
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,4G,4,Satisfactory,12.98199333,77.60223833,Karnataka
+Airtel,Indoor,2G,4,Satisfactory,-1,-1,NA
+Airtel,Indoor,4G,4,Satisfactory,-1,-1,NA
+RJio,Indoor,4G,5,Satisfactory,12.94936172,77.5933372,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.94936172,77.5933372,Karnataka
+Airtel,Indoor,4G,2,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,2G,3,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,5,Satisfactory,12.94936172,77.5933372,Karnataka
+RJio,Outdoor,4G,3,Satisfactory,30.1047787,78.2876381,Uttarakhand
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2205133,72.8427666,Maharashtra
+VI,Outdoor,4G,5,Satisfactory,20.02599453,73.88577866,Maharashtra
+RJio,Outdoor,4G,2,Poor Voice Quality,-1,-1,NA
+RJio,Outdoor,4G,2,Poor Voice Quality,-1,-1,NA
+RJio,Travelling,4G,2,Poor Voice Quality,-1,-1,NA
+RJio,Outdoor,4G,3,Satisfactory,-1,-1,NA
+RJio,Indoor,4G,3,Satisfactory,25.73300667,85.80869333,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73300667,85.80869333,Bihar
+RJio,Travelling,4G,3,Satisfactory,25.73279667,85.80974333,Bihar
+RJio,Travelling,4G,2,Poor Voice Quality,25.73279667,85.80974333,Bihar
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Travelling,4G,2,Poor Voice Quality,25.73279667,85.80974333,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,-1,-1,NA
+VI,Outdoor,Unknown,1,Poor Voice Quality,21.13642299,79.06039913,Maharashtra
+Airtel,Indoor,4G,2,Poor Voice Quality,-1,-1,NA
+VI,Travelling,Unknown,1,Poor Voice Quality,21.12270591,79.06848668,Maharashtra
+RJio,Indoor,4G,2,Poor Voice Quality,25.7463782,85.8068596,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7252357,85.8033377,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7252357,85.8033377,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7470706,85.8052588,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7252357,85.8033377,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7470706,85.8052588,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7316124,85.8068596,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7252357,85.8033377,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7470706,85.8052588,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7316124,85.8068596,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.732545,85.80923333,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7252357,85.8033377,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7470706,85.8052588,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.7316124,85.8068596,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.732545,85.80923333,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.732545,85.80923333,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73265667,85.80952833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73265667,85.80952833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73265667,85.80952833,Bihar
+RJio,Outdoor,Unknown,3,Satisfactory,30.11551473,78.28222294,Uttarakhand
+RJio,Outdoor,Unknown,3,Satisfactory,30.11551473,78.28222294,Uttarakhand
+RJio,Indoor,4G,5,Satisfactory,12.95660429,77.48964377,Karnataka
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2193218,72.8443474,Maharashtra
+RJio,Indoor,4G,3,Satisfactory,30.11551473,78.28222294,Uttarakhand
+RJio,Indoor,4G,4,Satisfactory,26.8903559,75.8088038,Rajasthan
+RJio,Indoor,4G,4,Satisfactory,26.8904106,75.8086969,Rajasthan
+RJio,Indoor,4G,5,Satisfactory,12.9566089,77.4896564,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.9566213,77.4896471,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95656327,77.4897235,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.94936172,77.5933372,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.9566954,77.4896693,Karnataka
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2201113,72.845086,Maharashtra
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2201113,72.845086,Maharashtra
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,Unknown,3,Satisfactory,30.1155239,78.2817738,Uttarakhand
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+RJio,Outdoor,4G,3,Satisfactory,30.1155239,78.2817738,Uttarakhand
+RJio,Outdoor,4G,4,Satisfactory,-1,-1,NA
+RJio,Outdoor,4G,4,Satisfactory,-1,-1,NA
+BSNL,Travelling,4G,5,Satisfactory,-1,-1,NA
+Airtel,Outdoor,2G,2,Poor Voice Quality,-1,-1,NA
+Airtel,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Outdoor,2G,4,Satisfactory,-1,-1,NA
+Airtel,Indoor,2G,4,Satisfactory,-1,-1,NA
+Airtel,Indoor,4G,4,Satisfactory,-1,-1,NA
+Airtel,Outdoor,4G,3,Satisfactory,-1,-1,NA
+RJio,Indoor,4G,3,Satisfactory,30.1155279,78.2817732,Uttarakhand
+RJio,Outdoor,Unknown,3,Satisfactory,30.1048002,78.2876495,Uttarakhand
+RJio,Indoor,4G,5,Satisfactory,12.95658995,77.48991698,Karnataka
+RJio,Indoor,4G,3,Satisfactory,30.1047998,78.2876503,Uttarakhand
+Airtel,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,Unknown,3,Satisfactory,30.1155854,78.281798,Uttarakhand
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,4,Satisfactory,26.8894474,75.8087893,Rajasthan
+RJio,Indoor,4G,3,Satisfactory,30.1155854,78.281798,Uttarakhand
+RJio,Indoor,4G,3,Satisfactory,30.1030517,78.2883667,Uttarakhand
+RJio,Outdoor,Unknown,3,Satisfactory,30.1030517,78.2883667,Uttarakhand
+Airtel,Indoor,Unknown,1,Poor Voice Quality,30.1071389,78.2891544,Uttarakhand
+Airtel,Travelling,4G,5,Satisfactory,17.998185,81.734975,Odisha
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73268,85.80938667,Bihar
+RJio,Indoor,4G,3,Satisfactory,25.73268,85.80938667,Bihar
+RJio,Outdoor,4G,3,Satisfactory,25.73268,85.80938667,Bihar
+Airtel,Indoor,2G,2,Poor Voice Quality,-1,-1,NA
+Airtel,Outdoor,Unknown,1,Poor Voice Quality,30.10965375,78.28772917,Uttarakhand
+Airtel,Outdoor,Unknown,3,Satisfactory,30.10965375,78.28772917,Uttarakhand
+RJio,Indoor,Unknown,2,Poor Voice Quality,19.2195039,72.8425011,Maharashtra
+Airtel,Indoor,Unknown,3,Satisfactory,30.1155292,78.2817635,Uttarakhand
+Airtel,Indoor,2G,1,Poor Voice Quality,27.5325713,79.2939118,Uttar Pradesh
+RJio,Outdoor,4G,2,Poor Voice Quality,25.730345,85.81512833,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73268,85.80938667,Bihar
+RJio,Indoor,4G,3,Satisfactory,25.73268,85.80938667,Bihar
+RJio,Indoor,4G,3,Satisfactory,25.73268,85.80938667,Bihar
+RJio,Outdoor,4G,3,Satisfactory,25.73268,85.80938667,Bihar
+RJio,Indoor,4G,3,Satisfactory,25.73268,85.80938667,Bihar
+RJio,Indoor,4G,1,Poor Voice Quality,25.732435,85.80927,Bihar
+RJio,Outdoor,4G,2,Call Dropped,25.73268,85.80938667,Bihar
+RJio,Outdoor,4G,1,Poor Voice Quality,25.73268,85.80938667,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73268,85.80938667,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73268,85.80938667,Bihar
+RJio,Outdoor,4G,2,Poor Voice Quality,25.73268,85.80938667,Bihar
+Airtel,Indoor,Unknown,1,Poor Voice Quality,30.1155207,78.2817712,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1154889,78.2819607,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1155121,78.2819378,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1155246,78.2817713,Uttarakhand
+Airtel,Indoor,Unknown,1,Poor Voice Quality,30.1155342,78.2817716,Uttarakhand
+RJio,Indoor,4G,5,Satisfactory,23.72540608,86.6376464,West Bengal
+RJio,Indoor,4G,5,Satisfactory,23.72540608,86.6376464,West Bengal
+Airtel,Outdoor,4G,3,Satisfactory,27.5302474,79.2826397,Uttar Pradesh
+BSNL,Indoor,Unknown,5,Satisfactory,-1,-1,NA
+RJio,Indoor,4G,4,Satisfactory,26.8900273,75.8083746,Rajasthan
+Airtel,Indoor,Unknown,5,Satisfactory,-1,-1,NA
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,4G,3,Satisfactory,30.1155271,78.2817724,Uttarakhand
+Airtel,Indoor,4G,1,Poor Voice Quality,30.1153838,78.2819002,Uttarakhand
+Airtel,Outdoor,4G,1,Poor Voice Quality,30.1067996,78.2957605,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.10674058,78.29577948,Uttarakhand
+Airtel,Outdoor,Unknown,3,Satisfactory,30.10674058,78.29577948,Uttarakhand
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,3,Satisfactory,19.2204924,72.8427636,Maharashtra
+BSNL,Indoor,3G,3,Poor Voice Quality,-1,-1,NA
+BSNL,Indoor,3G,4,Satisfactory,-1,-1,NA
+BSNL,Indoor,3G,1,Call Dropped,-1,-1,NA
+BSNL,Indoor,2G,2,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,Unknown,3,Satisfactory,30.10674058,78.29577948,Uttarakhand
+Airtel,Indoor,4G,2,Poor Voice Quality,30.10674058,78.29577948,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.10674058,78.29577948,Uttarakhand
+Airtel,Outdoor,4G,1,Poor Voice Quality,27.5324818,79.297434,Uttar Pradesh
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+RJio,Outdoor,4G,4,Satisfactory,-1,-1,NA
+Airtel,Indoor,4G,3,Satisfactory,30.1047328,78.2878057,Uttarakhand
+Airtel,Outdoor,4G,3,Satisfactory,30.1047864,78.2876561,Uttarakhand
+RJio,Indoor,4G,5,Satisfactory,12.95891519,77.49383163,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95891519,77.49383163,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.9566192,77.4896073,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95655785,77.48961342,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95665138,77.48948171,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.95654413,77.4897658,Karnataka
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+VI,Travelling,Unknown,5,Satisfactory,-1,-1,NA
+VI,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+Airtel,Indoor,Unknown,3,Satisfactory,30.1048003,78.2876512,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1048003,78.2876512,Uttarakhand
+RJio,Indoor,4G,4,Satisfactory,-1,-1,NA
+RJio,Indoor,4G,5,Satisfactory,12.95653763,77.48967454,Karnataka
+VI,Travelling,2G,1,Poor Voice Quality,21.12726664,79.06845313,Maharashtra
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Outdoor,4G,5,Satisfactory,-1,-1,NA
+VI,Travelling,Unknown,5,Satisfactory,-1,-1,NA
+VI,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+Airtel,Outdoor,4G,3,Satisfactory,30.1048003,78.2876507,Uttarakhand
+RJio,Travelling,4G,2,Poor Voice Quality,25.4129503,86.2513528,Bihar
+Airtel,Indoor,4G,3,Satisfactory,30.10649452,78.28780172,Uttarakhand
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,4G,5,Satisfactory,-1,-1,NA
+Airtel,Indoor,Unknown,3,Satisfactory,30.10471077,78.28780839,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.10471077,78.28780839,Uttarakhand
+Airtel,Outdoor,4G,2,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Travelling,4G,5,Satisfactory,12.8879781,77.6719317,Karnataka
+Airtel,Travelling,4G,5,Satisfactory,18.00685,81.710435,Chhattisgarh
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,Unknown,3,Satisfactory,30.1108617,78.2950401,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.110854,78.2950309,Uttarakhand
+Airtel,Indoor,Unknown,1,Poor Voice Quality,30.110855,78.2950299,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.110855,78.2950299,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108645,78.2950444,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1067372,78.2890692,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1067372,78.2890692,Uttarakhand
+RJio,Indoor,4G,3,Poor Voice Quality,-1,-1,NA
+RJio,Outdoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,4G,3,Satisfactory,30.1108451,78.2950502,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1107902,78.2949975,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1107902,78.2949975,Uttarakhand
+RJio,Outdoor,4G,1,Call Dropped,-1,-1,NA
+Airtel,Travelling,4G,4,Satisfactory,18.7523631,73.863224,Maharashtra
+RJio,Travelling,4G,5,Satisfactory,12.9397709,77.59644566,Karnataka
+RJio,Indoor,4G,5,Satisfactory,12.9566106,77.4899015,Karnataka
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,Unknown,5,Satisfactory,22.6446194,88.366152,West Bengal
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,19.2216599,72.8425011,Maharashtra
+RJio,Indoor,4G,4,Satisfactory,26.8901103,75.80852439,Rajasthan
+RJio,Outdoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,4,Satisfactory,26.8901103,75.80852439,Rajasthan
+RJio,Outdoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,20.340621,76.2656151,Maharashtra
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+Airtel,Indoor,4G,3,Satisfactory,30.1108347,78.2950403,Uttarakhand
+Airtel,Outdoor,Unknown,3,Satisfactory,30.1108434,78.2950291,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108377,78.2950413,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108377,78.2950413,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108377,78.2950413,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1108377,78.2950413,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.110836,78.2950381,Uttarakhand
+Airtel,Outdoor,4G,3,Satisfactory,30.1108423,78.2950386,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108423,78.2950386,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1108423,78.2950386,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108423,78.2950386,Uttarakhand
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+VI,Indoor,4G,5,Satisfactory,21.12326332,79.06785133,Maharashtra
+RJio,Indoor,4G,4,Satisfactory,26.90672432,75.84168169,Rajasthan
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Call Dropped,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,5,Satisfactory,12.95651278,77.48966625,Karnataka
+RJio,Outdoor,4G,5,Satisfactory,-1,-1,NA
+Airtel,Indoor,4G,3,Satisfactory,30.1108486,78.2950641,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108486,78.2950641,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108486,78.2950641,Uttarakhand
+Airtel,Indoor,Unknown,2,Poor Voice Quality,30.1108486,78.2950641,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1108486,78.2950641,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1108486,78.2950641,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1109161,78.2951555,Uttarakhand
+Airtel,Indoor,Unknown,3,Satisfactory,30.1108429,78.2950524,Uttarakhand
+Airtel,Indoor,Unknown,2,Poor Voice Quality,30.1108429,78.2950524,Uttarakhand
+Airtel,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+Airtel,Travelling,Unknown,4,Satisfactory,-1,-1,NA
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,5,Satisfactory,12.83860353,77.65893204,Karnataka
+Airtel,Indoor,Unknown,3,Satisfactory,30.1108406,78.2950501,Uttarakhand
+Airtel,Indoor,4G,3,Satisfactory,30.1108406,78.2950501,Uttarakhand
+RJio,Indoor,Unknown,1,Poor Voice Quality,19.2206152,72.8428493,Maharashtra
+RJio,Outdoor,4G,1,Call Dropped,-1,-1,NA
+Airtel,Indoor,2G,1,Poor Voice Quality,-1,-1,NA
+RJio,Indoor,4G,5,Satisfactory,12.9566421,77.4896771,Karnataka
+RJio,Indoor,4G,1,Poor Voice Quality,-1,-1,NA
+RJio,Outdoor,4G,1,Poor Voice Quality,-1,-1,NA

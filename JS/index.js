@@ -340,4 +340,43 @@ var label = document.getElementById("ParaRandom");
         
     // }
 
-  
+ // Number guessing name 
+	const guess = function ()  {
+		var min =1;    
+		var max = 100;
+		var answer = Math.floor(Math.random() * (max -  min+ 1)) + min;
+        console.log(answer);
+
+        let attemps = 0;
+        let guess = 0 ;
+        let isRunning = true;
+
+        while (isRunning) {
+            guess = window.prompt(`Guess a number between ${min} - ${max}`);
+            guess = Number(guess);
+
+            if(isNaN(guess)) {window.alert("ENTER A VALID NUMBER")}
+            else if (guess < min || guess > max) {window.alert("ENTER A VALID NUMEBR")}
+            else  {
+                attemps ++ ;
+                if(guess < answer) {
+                    window.alert("Too low , guess high");   
+                }else if(guess > answer) {
+                    window.alert("Too high , guess low");   
+                }else {
+                    window.alert(`you have guessed ${answer} right in ${attemps} attempts`);
+                }
+            }
+            isRunning = false ;
+
+        }
+	}
+    // guess();
+
+    // FUNCTIONS
+        // function isEven(n) {
+        //     return n%2 === 0;
+        // }
+        // for (let i = 0 ; i !== 100 ; i ++) {
+        //     console.log( i ,isEven(i) ? "even" : "odd");
+        // }
