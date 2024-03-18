@@ -87,7 +87,8 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "stdio.h": "c"
     },
     "livePreview.defaultPreviewPath": "/JS/index.html",
     "liveServer.settings.port": 5501
