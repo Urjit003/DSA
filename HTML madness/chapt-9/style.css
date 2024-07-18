@@ -1,0 +1,57 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+body {
+    font-family: "Roboto";
+    text-align: center;
+    font-size: larger;
+    align-content: center;
+    margin:0.5rem;
+}
+
+nav {
+    border:2px solid #333;
+    border-radius: 2rem;
+    margin-top:0 auto 1rem;
+    max-width: 600px;
+    font-size:3rem;
+    line-height: 7rem;
+}
+ul {
+    list-style-type:  none;
+}
+h1 {
+    padding:0.5rem;
+    color: rgb(169, 38, 151);
+    text-shadow: #333;
+    font-family: monospace;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    background-color: #443;
+    border-radius: 1.8rem 1.8rem 0 0;
+}
+li {
+    border-top: 1px solid #333;
+}
+li a {
+    display :block;
+}
+li a ,
+li a:visited{
+    text-decoration: none;
+    color:#333;
+}
+li a:hover,
+li a:focus {
+    background:#333;
+    color:whitesmoke;
+}
+li:nth-child(5) a {
+    border-radius: 0 0 1.7rem 1.7rem;
+}
+p {
+    margin-top:2rem;
+}

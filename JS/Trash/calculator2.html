@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .calculator {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            grid-column: span 4;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+            margin: 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #eee;
+            box-sizing: border-box;
+        }
+
+        input[type="button"]:hover {
+            background-color: #ddd;
+        }
+
+        input[type="button"]:active {
+            background-color: #ccc;
+        }
+
+        .error-message {
+            grid-column: span 4;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <form name="myform">
+            <input type="text" name="textbox">
+            <input type="button" value="1" onclick="addToTextbox('1')">
+            <input type="button" value="2" onclick="addToTextbox('2')">
+            <input type="button" value="3" onclick="addToTextbox('3')">
+            <input type="button" value="/" onclick="addToTextbox('/')">
+            <input type="button" value="(" onclick="addToTextbox('(')">
+            <input type="button" value="4" onclick="addToTextbox('4')">
+            <input type="button" value="5" onclick="addToTextbox('5')">
+            <input type="button" value="6" onclick="addToTextbox('6')">
+            <input type="button" value="*" onclick="addToTextbox('*')">
+            <input type="button" value=")" onclick="addToTextbox(')')">
+            <input type="button" value="7" onclick="addToTextbox('7')">
+            <input type="button" value="8" onclick="addToTextbox('8')">
+            <input type="button" value="9" onclick="addToTextbox('9')">
+            <input type="button" value="-" onclick="addToTextbox('-')">
+            <input type="button" value="0" onclick="addToTextbox('0')">
+            <input type="button" value="." onclick="addToTextbox('.')">
+            <input type="button" value="=" onclick="calculate()">
+            <input type="button" value="+" onclick="addToTextbox('+')">
+            <input type="button" value="C" onclick="clearTextbox()">
+        </form>
+        <p class="error-message" id="error-message"></p>
+    </div>
+
+    <script>
+        function addToTextbox(value) {
+            document.myform.textbox.value += value;
+        }
+
+        function clearTextbox() {
+            document.myform.textbox.value = '';
+            document.getElementById('error-message').textContent = '';
+        }
+        function LastElementClear() {
+            let current = document.myForm.txtBox.value ;
+            document.myForm.txtBox.value = current.slice(0,-1);
+        }
+        function calculate() {
+            try {
+                var result = eval(document.myform.textbox.value);
+                if (isNaN(result) || !isFinite(result)) {
+                    throw new Error('Invalid expression');
+                }
+                document.myform.textbox.value = result;
+                document.getElementById('error-message').textContent = '';
+            } catch (error) {
+                document.getElementById('error-message').textContent = error.message;
+            }
+        }
+    </script>
+</body>
+</html>

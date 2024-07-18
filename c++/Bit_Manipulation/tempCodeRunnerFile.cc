@@ -1,0 +1,1 @@
+EvenOrNot(10) ? "even" : "odd " 

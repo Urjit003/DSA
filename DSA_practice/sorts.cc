@@ -1,6 +1,14 @@
 #include<iostream>
 #include<stdlib.h>
 using namespace std;
+template <typename T> void PrintArray(T *arr , int size);
+template <typename T> void SWAP(T *a , T *b) ;
+template <typename T>  int IsSorted (T *arr , int size);
+template <typename T> void InsertionSort(T *arr, int size );
+template <typename T> void SelectionSort(T *arr, int size );
+template <typename T> void BubbleSort(T *arr , int size);
+
+
 template <typename T> void PrintArray(T *arr , int size) {
     for (int i = 0; i < size; i++)
     {
@@ -19,7 +27,6 @@ template <typename T>  int IsSorted (T *arr , int size) {
     {
         if(arr[i] > arr[i+1] ) {
             return 0; // if i+1 > i then its not sorted
-
         }
     }
     cout << endl;
@@ -79,9 +86,10 @@ int main (){
     }
     
     PrintArray(arr,size);
-    if(IsSorted(arr,size)) {cout << "List sorted"<< endl;}
+    if(IsSorted(arr,size)) {cout << "List sorted"<< endl;} else {cout << "List not sorted"<< endl;}
+    cout << "applying inserion sort\n";
     InsertionSort(arr,size);
-    if(IsSorted(arr,size)) {cout << "List sorted"<< endl;}
+    if(IsSorted(arr,size)) {cout << "List sorted"<< endl;} else {cout << "List not sorted"<< endl;}
     PrintArray(arr,size);
 return 0;
 }

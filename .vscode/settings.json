@@ -88,8 +88,12 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "queue": "cpp",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stdlib.h": "c"
     },
     "livePreview.defaultPreviewPath": "/JS/index.html",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "java.debug.settings.onBuildFailureProceed": true
 }

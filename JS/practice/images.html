@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3f3f3;
+        }
+        .image-container {
+            width: 70%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .button-container {
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img id="carouselImage" src="image1.jpg" alt="Image 1">
+    </div>
+    <div class="button-container">
+        <button onclick="previousImage()" id="backButton" disabled>Back</button>
+        <button onclick="nextImage()" id="nextButton">Next</button>
+    </div>
+
+    <script>
+        const images = ['image1.png', 'image2.png', 'image3.png', 'image4.png']; // Replace with your image paths
+        let currentIndex = 0;
+        const maxIndex = images.length - 1;
+        const imageElement = document.getElementById('carouselImage');
+        const backButton = document.getElementById('backButton');
+        const nextButton = document.getElementById('nextButton');
+
+        function updateImage() {
+            imageElement.src = images[currentIndex];
+            backButton.disabled = currentIndex === 0;
+            nextButton.disabled = currentIndex === maxIndex;
+        }
+
+        function previousImage() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateImage();
+            }
+        }
+
+        function nextImage() {
+            //  3  <  4
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateImage();
+            }
+        }
+    </script>
+</body>
+</html>

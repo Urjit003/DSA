@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State and City Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return displaySelection()">
+        <label for="state">State:</label>
+        <select id="state" name="state" onchange="updateCities()">
+            <option value="">Select state</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Rajasthan">Rajasthan</option>
+        </select>
+        <label for="city">City:</label>
+        <select id="city" name="city">
+            <option value="">Select city</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="result" id="result"></div>
+    <script>
+        const stateCityMap = {
+            Gujarat: ["Ahmedabad", "Surat", "Vadodara"],
+            Maharashtra: ["Mumbai", "Pune", "Nagpur"],
+            Rajasthan: ["Jaipur", "Udaipur", "Jodhpur"]
+        };
+        function updateCities() {
+            const stateSelect = document.getElementById("state");
+            const citySelect = document.getElementById("city");
+            const selectedState = stateSelect.value;
+
+            citySelect.innerHTML = '<option value="">Select city</option>';
+
+            if (selectedState) {
+                const cities = stateCityMap[selectedState];
+                for (const city of cities) {
+                    const option = document.createElement("option");
+                    option.value = city;
+                    option.textContent = city;
+                    citySelect.appendChild(option);
+                }
+            }
+        }
+        function displaySelection() {
+            const stateSelect = document.getElementById("state");
+            const citySelect = document.getElementById("city");
+            const resultDiv = document.getElementById("result");
+
+            const selectedState = stateSelect.value;
+            const selectedCity = citySelect.value;
+
+            if (!selectedState) {
+                alert("Please select a state.");
+                return false;
+            }
+
+            if (!selectedCity) {
+                alert("Please select a city.");
+                return false;
+            }
+
+            resultDiv.textContent = `Selected State: ${selectedState}, Selected City: ${selectedCity}`;
+            return false; // Prevent form submission for demonstration purposes
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <form name="currForm">
+      <div class="container">
+        <table>
+          <tr>
+            <td>
+              <input
+                required
+                placeholder="Enter a Number"
+                type="number"
+                name="inputTxt"
+                id="inputTxt"
+                min="0"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="color-Container">
+                <input
+                  type="radio"
+                  name="color"
+                  id="radioRed"
+                  value="red"
+                  checked
+                />
+                <label for="radioRed" id="lblRed">Red</label>
+                <input type="radio" name="color" id="radioBlue" value="blue" />
+                <label for="radioBlue" id="lblBlue">Blue</label>
+                <input
+                  type="radio"
+                  name="color"
+                  id="radioGreen"
+                  value="green"
+                />
+                <label for="radioGreen" id="lblGreen">Green</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="radio"
+                name="functionCall"
+                id="radioPalindrome"
+                value="palindrome"
+                checked
+              />
+              <label for="radioPalindrome">Palindrome</label>
+              <input
+                type="radio"
+                name="functionCall"
+                id="radioArmstrong"
+                value="Armstrong"
+              />
+              <label for="radioArmstrong">Armstrong</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit"
+                onclick="return CheckSubmit()"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label id="labelAnswer"></label>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>

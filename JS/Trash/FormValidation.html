@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-container input[type="radio"],
+        .form-container input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-container .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form name="f1" onsubmit="return validate()" method="post">
+            <div class="form-group">
+                <input type="text" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password">
+            </div>
+            <div class="form-group">
+                <select id="cource" name="cource">
+                    <option value="">Select Course</option>
+                    <option value="BCA">BCA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="MBA">MBA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" name="hobby" value="Dancing"> Dancing</label>
+                <label><input type="checkbox" name="hobby" value="Coding"> Coding</label>
+                <label><input type="checkbox" name="hobby" value="Singing"> Singing</label>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="error" id="error-message"></div>
+    </div>
+
+    <script>
+        function validate() {
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const email = document.f1.email.value;
+            const password = document.f1.password.value;
+            const cpassword = document.f1.cpassword.value;
+            const cource = document.f1.cource.value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+            const hobbies = document.querySelectorAll('input[name="hobby"]:checked');
+            const errorMessage = document.getElementById('error-message');
+
+            errorMessage.textContent = '';
+
+            if (!email) {
+                errorMessage.textContent = 'Enter user email';
+                return false;
+            } else if (!emailPattern.test(email)) {
+                errorMessage.textContent = 'Enter email in proper format';
+                return false;
+            }
+
+            if (!password) {
+                errorMessage.textContent = 'Enter password';
+                return false;
+            }
+
+            if (password !== cpassword) {
+                errorMessage.textContent = 'Passwords do not match';
+                return false;
+            }
+
+            if (!cource) {
+                errorMessage.textContent = 'Select a course';
+                return false;
+            }
+
+            if (!gender) {
+                errorMessage.textContent = 'Select gender';
+                return false;
+            }
+
+            if (hobbies.length === 0) {
+                errorMessage.textContent = 'Select at least one hobby';
+                return false;
+            }
+
+            alert(`Hello, ${email}`);
+            return true;
+        }
+    </script>
+</body>
+
+</html>

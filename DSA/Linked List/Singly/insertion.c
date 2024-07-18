@@ -9,7 +9,7 @@ typedef struct Node
 } Node;
 void traverse(struct Node *ptr)
 {
-    while (ptr != NULL)
+    while (ptr->next != NULL)
     {
         printf("[%d]%s", ptr->data, (ptr->next == NULL) ? "-> [NULL]":"->");
         ptr = ptr->next;

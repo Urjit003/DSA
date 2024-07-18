@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Table</title>
+</head>
+<body>
+    <div>
+        <h2>Print Table</h2>
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number">
+        <button onclick="printTable()">Print Table</button>
+        <br><br>
+        <table id="table"></table>
+    </div>
+
+    <script>
+        function printTable() {
+            const number = parseInt(document.getElementById('number').value);
+            let tableHTML = '<tr><th>Number</th><th>Square</th><th>Cube</th></tr>';
+
+            for (let i = 1; i <= number; i++) {
+                const square = i * i;
+                const cube = i * i * i;
+                tableHTML += `<tr><td>${i}</td><td>${square}</td><td>${cube}</td></tr>`;
+            }
+
+            document.getElementById('table').innerHTML = tableHTML;
+        }
+    </script>
+</body>
+</html>

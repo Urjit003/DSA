@@ -1,0 +1,6 @@
+heap :- a complete binary tree that satisfies a heap property
+
+max heap :- children of the parent node have lesser value. 
+min heap :- children of the parent node have greater value. 
+
+complete BT :- is such a tree where every node has at least 2 children , it is left left side oritened

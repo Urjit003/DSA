@@ -1,0 +1,29 @@
+/* 
+    typography is the way that text is arranged and presented
+*/
+body {
+    padding: 10%;
+    font-family: fantasy;
+    font-size: 2rem;
+}
+h1{
+    font-style: normal;
+    letter-spacing: 2px; 
+    word-spacing: 1em; 
+    margin-left: 2em;
+    text-decoration: line-through;
+}
+#cut {
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+p {
+    text-indent: 3em;
+    line-height: 1.5;
+    font-style: normal;
+    letter-spacing: 1px; 
+    word-spacing: 0.5em; 
+}
+/* input,button {
+    font:inherit;
+} */

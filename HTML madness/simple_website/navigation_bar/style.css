@@ -1,0 +1,53 @@
+* {
+    font-family: 'Roboto', Courier, monospace;
+    font-size: 2rem;
+}
+.nav_header ul {
+    border-radius: 40px;
+    padding: 0px;
+    margin: 0px;
+    
+    background-color: rgb(62, 62, 62);
+    list-style: none;
+    overflow: hidden;
+}
+.nav_header  a{
+    color:white;
+    text-decoration: none;
+    padding: 20px;
+    /* margin: 20px; */
+    display: block;
+    text-align: center;
+}
+
+.nav_header a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 20px;
+  
+}
+.nav_header li {
+    padding: 15px;
+    margin: 15px;
+    margin-left: 20px;
+    float: left;
+}
+.nav_header #aboutme {
+    word-spacing: 0.1px;
+}
+.nav_header #search {
+    margin-left:617px ;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+#search {
+    padding: 15px; /* Adjust the value as needed */
+}
+
+#search::placeholder{
+    padding-left:15%;
+}
+#serach::-webkit-input-placeholder {
+    
+    padding-left: 100px;
+}

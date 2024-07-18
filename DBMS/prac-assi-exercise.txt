@@ -120,7 +120,7 @@ CREATE TABLE db1.sale_order_details(
 	Product_rate Numeric(10,2),
     PRIMARY KEY (order_no , Product_no),
     FOREIGN KEY (order_no) REFERENCES db1.sale_order(order_no),
-     FOREIGN KEY (Product_no) REFERENCES db1.product_master(Product_no)
+	FOREIGN KEY (Product_no) REFERENCES db1.product_master(Product_no)
 );
 select * from db1.client_master ;
  select * from db1.product_master ;

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #eee;
+        }
+
+
+        input[type="button"]:hover {
+            background-color: #ddd;
+        }
+
+        input[type="button"]:active {
+            background-color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form  name="myForm">
+
+        <input type="text" name="txtBox" id="txtBox" readonly>
+        <br>
+        <input type="button" value="7" onclick="addToTextBox('7')">
+        <input type="button" value="8" onclick="addToTextBox('8')">
+        <input type="button" value="9" onclick="addToTextBox('9')">
+        <input type="button" value="/" onclick="addToTextBox('/')">
+        <br>
+        <input type="button" value="4" onclick="addToTextBox('4')">
+        <input type="button" value="5" onclick="addToTextBox('5')">
+        <input type="button" value="6" onclick="addToTextBox('6')">
+        <input type="button" value="*" onclick="addToTextBox('*')">
+        <br>
+        <input type="button" value="1" onclick="addToTextBox('1')">
+        <input type="button" value="2" onclick="addToTextBox('2')">
+        <input type="button" value="3" onclick="addToTextBox('3')">
+        <input type="button" value="-" onclick="addToTextBox('-')">
+        <br>
+        <input type="button" value="0" onclick="addToTextbox('0')">
+        <input type="button" value="." onclick="addToTextbox('.')">
+        <input type="button" value="+" onclick="addToTextbox('+')">
+        <input type="button" value="=" onclick="calculate()">
+        <br>
+        <input type="button" value="AC" onclick="clearTextBox()">
+        <input type="button" value="C" onclick="LastElementClear()">
+
+        <br>
+        <p id="error-message"></p>
+    </form>
+    <script>
+        function LastElementClear() {
+            let current = document.myForm.txtBox.value ;
+            document.myForm.txtBox.value = current.slice(0,-1);
+        }
+        function clearTextBox () {
+            document.myForm.txtBox.value = '';
+        }
+        function addToTextBox(val){
+            document.myForm.txtBox.value += val;
+        }
+        function calculate() {
+            try {
+                let result = eval(document.myForm.txtBox.value)
+                if(isNaN(result) || !(isFinite(result))) {
+                    throw new Error('Invalid Expression')
+                }
+                document.myForm.txtBox.value = result;
+                document.getElementById('error-message').textContent = '';
+            }catch(e) {
+                document.getElementById('error-message').textContent = e.message;
+            }
+        }
+    </script>
+</body>
+</html>

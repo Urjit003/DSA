@@ -1,0 +1,88 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "fibb",
+            "request": "launch",
+            "mainClass": "memoization.fibb",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "FinalExam",
+            "request": "launch",
+            "mainClass": "Threads.FinalExam",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "Reverse",
+            "request": "launch",
+            "mainClass": "String.Reverse",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "AverageCalculator",
+            "request": "launch",
+            "mainClass": "Exception.AverageCalculator",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "Restaurant",
+            "request": "launch",
+            "mainClass": "Threads.Restaurant",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "Restaurant",
+            "request": "launch",
+            "mainClass": "Logical.Restaurant",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "MultiThreadApp",
+            "request": "launch",
+            "mainClass": "Threads.MultiThreadApp",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "PrimeAndFibb",
+            "request": "launch",
+            "mainClass": "Logical.PrimeAndFibb",
+            "projectName": "codes_51b55a2c",
+            "noDebug": false,
+            "__progressId": "87dd53d9-b6fd-45aa-9f4f-b5aac6d5bf6b",
+            "__origin": "internal"
+        },
+        {
+            "type": "java",
+            "name": "EvenOddImple",
+            "request": "launch",
+            "mainClass": "Threads.EvenOddImple",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "JoinImplementation",
+            "request": "launch",
+            "mainClass": "Threads.JoinImplementation",
+            "projectName": "codes_51b55a2c"
+        },
+        {
+            "type": "java",
+            "name": "Implementation",
+            "request": "launch",
+            "mainClass": "Threads.Implementation",
+            "projectName": "codes_51b55a2c"
+        }
+    ]
+}

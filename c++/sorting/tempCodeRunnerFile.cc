@@ -1,0 +1,1 @@
+ IsSorted == 1 
