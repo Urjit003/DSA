@@ -18,7 +18,7 @@ const UsersPage = async (title: any) => {
             <th>User Name</th>
             <th>User email</th>
             <th>User Phone</th>
-          </tr>
+          </tr> 
 
         </thead>
         <tbody>
