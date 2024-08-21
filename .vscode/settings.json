@@ -89,11 +89,18 @@
         "variant": "cpp",
         "queue": "cpp",
         "stdio.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "expected": "cpp",
+        "format": "cpp",
+        "spanstream": "cpp",
+        "stacktrace": "cpp",
+        "stdfloat": "cpp"
     },
     "livePreview.defaultPreviewPath": "/JS/index.html",
     "liveServer.settings.port": 5501,
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+    "vim.useSystemClipboard": true
 }

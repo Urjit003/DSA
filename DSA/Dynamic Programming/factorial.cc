@@ -18,15 +18,41 @@ void file_i_o()
     freopen("output.txt", "w", stdout);
 #endif
 }
-ll factorial(int n) {
-    vi dp(n+1 , 1);
-    for (int i = 2; i <= n; i++)
+constexpr int MAX = 100;
+constexpr ll null = -1;
+constexpr ll safe = 21;
+ll memoTable[MAX];
+void _init()
+{
+    for (int i = 0; i < MAX; i++)
     {
-        dp[i] = i * dp[i-1];
+        memoTable[i] = null;
     }
-    return dp[n];
 }
-int main() {
-    cout << factorial(10);
+
+ll factorial(int n)
+{
+
+    if (memoTable[n] == null)
+    {
+        if (n <= 1)
+            memoTable[n] = 1;
+        else
+            memoTable[n] = n * factorial(n - 1);
+    }
+    return memoTable[n];
+}
+int main()
+{
+    static bool hasRan = false;
+    if (!hasRan)
+    {
+        _init();
+        hasRan = true;
+    }
+    for (int i = 0; i < safe; i++)
+    {
+        cout << "Factorial of " << i << " is : " << factorial(i) << endl;
+    }
     return 0;
 }

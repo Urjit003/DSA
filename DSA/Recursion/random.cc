@@ -5,14 +5,14 @@
 #include<queue>
 #include<vector>
 using namespace std;
-void print (int n) {
-    cout << "HELLO WORLD " << n << "\n";
+void print (string s, int  n) {
+    cout << s<< n << "\n";
     if (n == 0) {
         return;
     }
-    print(--n);
+    print(s,--n);
 }
 int main (){
-print(10);
+print("yo",10);
 return 0;
 }

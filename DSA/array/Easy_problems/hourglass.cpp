@@ -23,17 +23,14 @@ int n = vec.size();
 ll sum = 0 ;
 void solve()
 {
-    for (int i = (0); i < (n); i++)
+    for (int i = (0); i < (n-2); i++)
     {
-        for (int j = (0); j < (n); j++)
+        for (int j = (0); j < (n-2); j++)
         {
-            if ((i == 0) || (i == n - 1) || (i == n / 2 &&  j  == n / 2))
-            {
-                cout << vec[i][j] << " ";
-                sum+=vec[i][j];
-            }else {
-                cout << "  ";
-            }
+          cout << vec[i][j] << " " << vec[i][j+1] << " "<< vec[i][j+2] <<endl;
+          cout << "  " << vec[i+1][j+1] << endl;
+          cout <<vec[i+1][j] << " " << vec[i+1][j+1] << " " << vec[i+2][j+2] ;
+          sum++;
         }
         cout <<endl ;
     }

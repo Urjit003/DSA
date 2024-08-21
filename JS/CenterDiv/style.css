@@ -1,0 +1,17 @@
+* {
+    margin : 0 ;
+    padding : 0 ;
+    box-sizing: border-box;
+}
+.parent {
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.child {
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+}

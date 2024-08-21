@@ -16,12 +16,12 @@ void print(int n)
 void oneToN(int n)
 {
     if (n > 0) {
-        oneToN(n-1) ;
+        oneToN(--n) ;
         cout << n << endl;
     }
  }
 int main()
 {
-    oneToN(5);
+    print(5);
     return 0;
 }

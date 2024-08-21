@@ -18,22 +18,24 @@ void file_i_o()
     freopen("output.txt", "w", stdout);
 #endif
 }
-bool isSorted(vi vec) {
-    for (auto i = 0; i < vec.size()-1; i++)
+bool isSorted(vi vec)
+{
+    for (auto i = 0; i < vec.size() - 1; i++)
     {
-        if(vec[i+1] < vec[i])
+        if (vec[i + 1] < vec[i])
             return false;
     }
-    
+
     return true;
 }
-int main() {
-    vi arr ;
+int main()
+{
+    vi arr;
     for (int i = 0; i < 1000; i++)
     {
         arr.pb(rand() % 100000);
     }
-    logarr(arr,0,arr.size());
+    logarr(arr, 0, arr.size());
     cout << isSorted(arr);
     return 0;
 }

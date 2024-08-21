@@ -22,7 +22,7 @@ double returnNextMultiple(int n, int mul)
 {
     if (n % mul == 0)
     {
-        return 0;
+        return n;
     }
     for (n; n % mul != 0; n++)
         ;
@@ -30,7 +30,7 @@ double returnNextMultiple(int n, int mul)
 }
 int main()
 {
-    int n = 73;
-    cout << "next multiple of " << n << " is : " << returnNextMultiple(n, 5) << endl; // 75
+    int n = 43;
+    cout << "next multiple of " << n << " is : " << returnNextMultiple(n, 6) << endl; // 75
     return 0;
 }

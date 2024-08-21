@@ -1,0 +1,45 @@
+body {
+    font-family: areal,sans-serif;
+    background-color: hsla(0, 100%, 97%, 0.442);
+}
+h1{
+    color:rgba(0, 0, 255, 0.532)'
+}
+form {
+    background-color :rgba(226, 209, 209, 0.732) ;
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.384);
+}
+#txtBox {
+    width: 75%;
+    text-align: center;
+    font-size: 2em;
+    border:2px solid rgba(0, 0, 0, 0.384);
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button {
+    margin-top: 15px;
+    font-size: 1.5em;
+    background: hsl(0,100%,60%);
+    border:none;
+    padding:10px 15px;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+}
+button:hover {
+    background:hsl(0,100%,50%);
+}
+#result {
+    font-size: 1.75em;
+    font-weight: bold;
+}

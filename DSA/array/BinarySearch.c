@@ -72,32 +72,31 @@ int BinarySearch(int arr[], int size, int target)
         }
     }
 }
-int MakeArray(int size)
-{
-    int *arr = (int *)malloc(size * sizeof(int));
-    printf("Enter the size of your array: ");
-    scanf("%d", &size);
+int *MakeArray(int size) {
+    int *arr = (int *) malloc(sizeof(int) * size);
     for (int i = 0; i < size; i++)
     {
-        scanf("%d", &arr[i]);
-        return (arr[i]);
+        printf("enter for %d : ",i+1);
+        scanf("%d",&arr[i]);
     }
-    return arr;
+    return arr ;
 }
 int main()
 {
     // // Your code here
-    // int arr[] = {MakeArray()};
-    // int size = sizeof(arr)/sizeof(int);
+    int *arr = {MakeArray(10)};
+    int size = sizeof(arr)/sizeof(int);
     // int element;
     // SortArray(arr,size);
     // Display(arr,size);
     // printf("Enter the elemet:"); scanf("%d",&element);
     // printf("%d found at [%d]",element,BinarySearch(arr,size,element));
-    int arr[] = {1, 3, 56, 60, 65, 701, 2223, 10444, 123, 23, 12};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    // int arr[] = {1, 3, 56, 60, 65, 701, 2223, 10444, 123, 23, 12};
+    // int size = sizeof(arr) / sizeof(int);
     Display(arr, size);
     SortArray(arr, size);
+    int target ;
+    scanf("%d",&target);
     Display(arr, size);
-    printf("%d fount at [%d]\n", 701, BinarySearch(arr, size, 701));
+    printf("%d fount at [%d]\n", target, BinarySearch(arr, size, target));
 }

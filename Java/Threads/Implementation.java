@@ -1,4 +1,4 @@
-package Threads;
+package Java.Threads;
 
 import java.util.*;
 
