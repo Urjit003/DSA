@@ -26,6 +26,6 @@ int EvenOrNot(int n)
 int main()
 {
   
-    cout << (EvenOrNot(113) ? "even" : "odd " );
+    cout << (EvenOrNot(112) ? "even" : "odd " );
     return 0;
 }

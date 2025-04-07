@@ -2,5 +2,6 @@ const nums = [];
 for(let i = 0 ; i <= 20 ; ++i  ) {
     nums.push(i) ;
 }
-const lol = nums.filter((e)=> e%2==0)
+nums.push(null)
+const lol = nums.filter((e)=> e%2==null)
 console.log(lol);

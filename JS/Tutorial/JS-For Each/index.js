@@ -5,4 +5,4 @@ nums.forEach(double) ;
 function double(val,index,arr) {
     arr[index] = val * 2 ;
 }
-console.log(nums);
+console.log(true + 10);

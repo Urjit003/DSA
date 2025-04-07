@@ -57,7 +57,7 @@ int main()
 {
     abc a ;
     vi original = {1, 2, 3, 4, 5, 6, 7 , 8};
-    vi alterd = a.rotateLeftByD_REV(10, original);
+    vi alterd = a.rotateLeftByD_REV(3, original);
 
     logarr(alterd, 0, alterd.size() - 1);
     return 0;

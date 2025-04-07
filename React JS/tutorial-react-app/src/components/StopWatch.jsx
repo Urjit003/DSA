@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-export default () => {
+export default function StopWatch() {
   const [isRunning, setIsRunning] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
   const intervalRef = useRef(null);

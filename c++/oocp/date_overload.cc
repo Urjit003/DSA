@@ -31,14 +31,14 @@ public:
 
 int main() {
     // Create a Date object
-    Date currentDate(1, 22, 2024);
+    Date currentDate(02, 10, 2024);
 
     // Display current date
     std::cout << "Current ";
     currentDate.display();
 
     // Add 45 days to the current date
-    Date newDate = currentDate + 5;
+    Date newDate = currentDate + 45;
 
     // Display the updated date
     std::cout << "After adding 45 days ";

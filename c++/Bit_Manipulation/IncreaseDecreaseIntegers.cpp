@@ -18,19 +18,20 @@ void file_i_o()
     freopen("output.txt", "w", stdout);
 #endif
 }
-int main() {
-    
-    int i = 0 ;
-    //bitwis incrementing an integer  
+int main()
+{
+
+    int i = 0;
+    // bitwis incrementing an integer
     i = -~i;
     // cout << i  << endl;
-    //how to get a binary of a numerb
-        int count = __builtin_popcount(3);
-        cout << count;
-    // find an absolute value of an intger 
-    i = -10 ;
-int abs = (i ^ (i >> 31)) - (i >> 31);
-    cout << abs  ;
- 
+    // how to get a binary of a numerb
+    int count = __builtin_popcount(3);
+    cout << count << endl;
+    // find an absolute value of an intger
+    int j = -10;
+    int abs = (j ^ (j >> 31)) - (j >> 31);
+    cout << abs;
+
     return 0;
 }

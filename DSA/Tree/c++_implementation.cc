@@ -86,30 +86,6 @@ public:
 class BinarySearchTree : public BinaryTree
 {
 public:
-    void inOrderTraversal(Node *node)
-    {
-        if (node == nullptr)
-            return;
-        inOrderTraversal(node->left);
-        cout << node->data << " ";
-        inOrderTraversal(node->right);
-    }
-    void preOrderTraversal(Node *node)
-    {
-        if (node == nullptr)
-            return;
-        cout << node->data << " ";
-        preOrderTraversal(node->left);
-        preOrderTraversal(node->right);
-    }
-    void postOrderTraversal(Node *node)
-    {
-        if (node == nullptr)
-            return;
-        postOrderTraversal(node->left);
-        postOrderTraversal(node->right);
-        cout << node->data << " ";
-    }
     Node *insertBST(Node *root, int data)
     {
         if (root == nullptr)
@@ -151,6 +127,8 @@ int main()
 
     cout << "\nBST In-order Traversal: ";
     bst.inOrderTraversal(bst.root);
+    cout << "\nBST pre-order Travsersal :" ;
+    bst.preOrderTraversal(bst.root);
     cout << endl;
     return 0;
 }

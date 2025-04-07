@@ -94,13 +94,15 @@
         "format": "cpp",
         "spanstream": "cpp",
         "stacktrace": "cpp",
-        "stdfloat": "cpp"
+        "stdfloat": "cpp",
+        "*.dll": "cpp",
+        "TESTTEST.C": "cpp"
     },
     "livePreview.defaultPreviewPath": "/JS/index.html",
     "liveServer.settings.port": 5501,
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
     "java.debug.settings.onBuildFailureProceed": true,
-    "C_Cpp.errorSquiggles": "enabledIfIncludesResolve",
+    "C_Cpp.errorSquiggles": "enabled",
     "vim.useSystemClipboard": true
 }

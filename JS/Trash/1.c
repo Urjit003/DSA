@@ -1,18 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
-    ajdkjasd ;
-    asdasd
-    asdasd
-    ;default
-    asdasd
-    ;
-    alsdas;
-    asdasdl
-    g;d;
-    fgf;
-    gfgfg;;
-    ;;
+   std::cout << "Hello world" ;
     
 return 0 ;
 }
